@@ -11,10 +11,15 @@ Currently, two official plugins are available:
 To run the project-
 
 Steps-
+
+
 //On terminal 1
 1. cd backend
 2.npm run dev
+
+
 //On terminal 2
+
 3.cd frontend
 4.npx tailwindcss init -p
 5.npm run dev 
