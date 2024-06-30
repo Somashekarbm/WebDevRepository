@@ -1,5 +1,5 @@
-import { Timestamp } from "mongodb"
-import mongoose from "mongoose"
+import mongoose from 'mongoose';
+
 const bookSchema = mongoose.Schema(
     {
         title: {
@@ -9,12 +9,15 @@ const bookSchema = mongoose.Schema(
         author: {
             type: String,
             required: true,
-        }, publishYear: {
+        },
+        publishYear: {
             type: Number,
             required: true,
         },
-    }, {
-    timestamps: true,
-}
-)
+    },
+    {
+        timestamps: true,
+    }
+);
+
 export const Book = mongoose.model('Book', bookSchema);
